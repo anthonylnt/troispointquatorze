@@ -53,6 +53,8 @@ end
 
 set :css_dir, 'stylesheets'
 
+set :fonts_dir, 'fonts'
+
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
