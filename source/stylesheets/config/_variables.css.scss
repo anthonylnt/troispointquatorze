@@ -3,8 +3,24 @@
  * ------------------------------------- */
 // Google fonts
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
-$base-font: "Open Sans", "Helvetica", "sans-serif";
-$header-font: "Raleway", "Helvetica", "sans-serif";
+
+$icon-font-path: '../fonts/' !default;
+
+@font-face {
+  font-family: "CircularStd-Black";
+  src: url("#{$icon-font-path}CircularStd-Black.ttf") format("truetype");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik-Regular";
+  src: url("#{$icon-font-path}Graphik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$base-font: "Graphik-Regular", "Helvetica", "sans-serif";
+$header-font: "CircularStd-Black", "Helvetica", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {
