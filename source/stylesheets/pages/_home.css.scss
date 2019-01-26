@@ -3,7 +3,6 @@
   &-section {
     background-color: #FAFAFA;
     padding: 20px;
-    box-shadow: 1px 1px 3px #F0F0F0;
     position: relative;
     margin: 50px 0;
   }
@@ -17,28 +16,32 @@
   pre {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
+    background-color: #282a35;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    box-shadow: 0 15px 35px rgba(126,87,88,.2);
+    padding: 30px;
+    width: 1000px;
+    margin: 0 auto;
   }
 
   // Headings
 
   h1.readme-header, h2.readme-header, h3.readme-header {
-    color: #7D7979;
+    color: black;
     font-weight: bold;
     line-height: 25px;
     margin: 10px 0;
-    text-transform: uppercase;
-    background: #474747;
     line-height: 45px;
     text-align: center;
-    color: white;
-    border-radius: 10px;
     margin-bottom: 20px;
   }
   h1.readme-header {
     font-size: 17px;
   }
   h2.readme-header {
-    font-size: 25px;
+    font-size: 42px;
   }
   h3.readme-header {
     font-size: 25px;
