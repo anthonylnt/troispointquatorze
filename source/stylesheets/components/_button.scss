@@ -26,4 +26,29 @@
   color: white;
 }
 
+tag {
+  border-radius: 3px;
+  padding: 0 15px 3px;
+  &.red {
+    color: #FD1015;
+    background-color: #FFE0E1;
+  }
+  &.purple {
+    color: #7E73FF;
+    background-color: #ECEAFF;
+  }
+  &.green {
+    color: #1EDD88;
+    background-color: #E4FFF3;
+  }
+  &.blue {
+    color: #62DDF5;
+    background-color: #E8FAFE;
+  }
+  &.yellow {
+    color: #FFC65A;
+    background-color: #FFF7E8;
+  }
+}
+
 /* Build your own button classes ! */
