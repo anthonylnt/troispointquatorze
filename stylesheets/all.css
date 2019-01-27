@@ -12600,15 +12600,15 @@ readers do not read off random characters that represent icons */
 
 /* line 34, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .m {
-  color: #009999; }
+  color: #1EDD88; }
 
 /* line 35, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .s {
-  color: #FFC65A; }
+  color: #54b2d7; }
 
 /* line 36, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .n {
-  color: #333333; }
+  color: #1EDD88; }
 
 /* line 37, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .na {
@@ -12616,16 +12616,16 @@ readers do not read off random characters that represent icons */
 
 /* line 38, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .nb {
-  color: #0086b3; }
+  color: #1EDD88; }
 
 /* line 39, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .nc {
-  color: #445588;
+  color: #f92872;
   font-weight: bold; }
 
 /* line 40, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .no {
-  color: teal; }
+  color: #1EDD88; }
 
 /* line 41, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .ni {
@@ -12638,7 +12638,7 @@ readers do not read off random characters that represent icons */
 
 /* line 43, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .nf {
-  color: #990000;
+  color: #62DDF5;
   font-weight: bold; }
 
 /* line 44, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
@@ -12647,7 +12647,7 @@ readers do not read off random characters that represent icons */
 
 /* line 45, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .nt {
-  color: #e0245e; }
+  color: #f92872; }
 
 /* line 46, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .nv {
@@ -12707,7 +12707,7 @@ readers do not read off random characters that represent icons */
 
 /* line 60, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .sx {
-  color: #dd1144; }
+  color: #1EDD88; }
 
 /* line 61, /Users/anthony/code/Consulting/314/source/stylesheets/layout/_pygments.css.scss */
 .sr {
@@ -12777,16 +12777,90 @@ readers do not read off random characters that represent icons */
   font-size: 18px; }
   /* line 3, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme-section {
-    background-color: #FAFAFA;
-    padding: 20px;
-    position: relative;
-    margin: 50px 0; }
-  /* line 10, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    padding: 20px 200px;
+    margin: 50px 0;
+    display: flex;
+    flex-flow: column; }
+    /* line 8, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section img {
+      margin: 0 auto;
+      border-radius: 6px; }
+    /* line 12, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:first-child {
+      margin-top: 120px; }
+      /* line 14, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+      .readme-section:first-child:before {
+        content: "";
+        background: url(../../images/first-section.svg) no-repeat;
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        top: -7px;
+        z-index: -9;
+        transform: translate(-50%, 0);
+        left: 50%; }
+      /* line 25, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+      .readme-section:first-child:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 800px;
+        top: 150px;
+        background-color: #fcf5e8;
+        z-index: -10;
+        transform: translate(-50%, 0);
+        left: 50%; }
+    /* line 39, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:nth-child(3) h2, .readme-section:nth-child(6) h2 {
+      margin-top: 40px !important; }
+    /* line 42, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:nth-child(3):before, .readme-section:nth-child(6):before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1800px;
+      background-color: #fcf5e8;
+      z-index: -10;
+      transform: translate(-50%, 0);
+      left: 50%;
+      border-radius: 75% 17% 0 0 / 4% 0; }
+    /* line 55, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:nth-child(6):before {
+      height: 800px; }
+    /* line 60, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:last-child:before {
+      content: "";
+      background: url(../../images/last-section.svg) no-repeat;
+      position: absolute;
+      width: 100%;
+      height: 800px;
+      bottom: 45px;
+      z-index: -10;
+      transform: translate(-50%, 0);
+      left: 50%; }
+    /* line 71, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section:last-child:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 400px;
+      bottom: 0;
+      background-color: #fcf5e8;
+      z-index: -10;
+      transform: translate(-50%, 0);
+      left: 50%; }
+    /* line 83, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme-section .laptop {
+      position: absolute;
+      bottom: 60px;
+      right: 20px;
+      box-shadow: none; }
+  /* line 91, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme .download {
     position: absolute;
     right: 20px;
     bottom: 20px; }
-  /* line 16, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+  /* line 97, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme pre {
     margin-top: 30px !important;
     margin-bottom: 30px !important;
@@ -12798,7 +12872,15 @@ readers do not read off random characters that represent icons */
     padding: 30px;
     width: 1000px;
     margin: 0 auto; }
-  /* line 31, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    /* line 108, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    .readme pre code {
+      color: white;
+      background-color: transparent; }
+  /* line 114, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+  .readme code {
+    color: #fd0f15;
+    background-color: #FFE0E1; }
+  /* line 121, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme h1.readme-header, .readme h2.readme-header, .readme h3.readme-header {
     color: black;
     font-weight: bold;
@@ -12806,62 +12888,74 @@ readers do not read off random characters that represent icons */
     margin: 10px 0;
     line-height: 45px;
     text-align: center;
-    margin-bottom: 20px; }
-  /* line 40, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+    margin-bottom: 30px; }
+  /* line 130, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme h1.readme-header {
     font-size: 17px; }
-  /* line 43, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+  /* line 133, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme h2.readme-header {
     font-size: 42px; }
-  /* line 46, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+  /* line 136, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme h3.readme-header {
     font-size: 25px; }
-  /* line 49, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+  /* line 139, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
   .readme li {
     font-size: 18px;
     line-height: 30px;
-    margin: 5px 0; }
+    margin: 5px 0;
+    list-style: none; }
 
-/* line 2, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-.banner-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  justify-items: center;
-  height: 100vh;
-  position: relative; }
-  /* line 10, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-  .banner-content-left h1 {
-    font-size: 60px;
-    font-weight: 700;
-    color: black;
-    line-height: 100px; }
-  /* line 16, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-  .banner-content-left p {
-    font-size: 21px; }
-  /* line 19, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-  .banner-content-left .logo-container {
+/* line 147, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+svg {
+  width: 100%; }
+
+/* line 151, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
+ul,
+ol {
+  padding: 0; }
+
+/* line 1, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+.banner {
+  overflow-x: hidden; }
+  /* line 3, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+  .banner-content {
     display: grid;
-    grid-template-columns: repeat(2, 250px);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    margin-top: 50px; }
-  /* line 26, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-  .banner-content-right {
-    padding: 20px;
-    justify-self: end; }
-    /* line 29, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-    .banner-content-right img {
-      width: 500px;
-      border-radius: 6px;
-      max-width: 100%; }
-    /* line 34, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
-    .banner-content-right svg {
-      position: absolute;
-      width: 100%;
-      bottom: 80px;
-      transform: translate(-50%, 50%);
-      left: 50%;
-      z-index: -1; }
+    justify-items: center;
+    height: 100vh;
+    position: relative; }
+    /* line 11, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+    .banner-content-left h1 {
+      font-size: 60px;
+      font-weight: 700;
+      color: black;
+      line-height: 100px; }
+    /* line 17, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+    .banner-content-left p {
+      font-size: 21px; }
+    /* line 20, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+    .banner-content-left .logo-container {
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      align-items: center;
+      margin-top: 50px; }
+    /* line 27, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+    .banner-content-right {
+      padding: 20px;
+      justify-self: end; }
+      /* line 30, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+      .banner-content-right img {
+        width: 500px;
+        border-radius: 6px;
+        max-width: 100%; }
+  /* line 37, /Users/anthony/code/Consulting/314/source/stylesheets/components/_banner.scss */
+  .banner svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: -25%;
+    z-index: -1; }
 
 /* line 1, /Users/anthony/code/Consulting/314/source/stylesheets/components/_button.scss */
 .btn-medium {
