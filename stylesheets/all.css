@@ -12791,7 +12791,7 @@ readers do not read off random characters that represent icons */
       /* line 14, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
       .readme-section:first-child:before {
         content: "";
-        background: url(../../images/first-section.svg) no-repeat;
+        background: url(../images/first-section.svg) no-repeat;
         position: absolute;
         width: 100%;
         height: 800px;
@@ -12830,7 +12830,7 @@ readers do not read off random characters that represent icons */
     /* line 60, /Users/anthony/code/Consulting/314/source/stylesheets/pages/_home.css.scss */
     .readme-section:last-child:before {
       content: "";
-      background: url(../../images/last-section.svg) no-repeat;
+      background: url(../images/last-section.svg) no-repeat;
       position: absolute;
       width: 100%;
       height: 800px;
