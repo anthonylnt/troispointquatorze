@@ -35,10 +35,10 @@ title: Landing page HTML/CSS - Troispointquatorze
           <li>
             Pour gagner du temps, Faites clique-droit sur les images suivantes et sauvez les dans votre dossier <code>images</code>
             <ul class="list-inline">
-              <li><img src="images/briefcase.png" alt="" width="100"></li>
-              <li><img src="images/diamond.png" alt="" width="100"></li>
-              <li><img src="images/heart.png" alt="" width="100"></li>
+              <li><img src="images/hammer.png" alt="" width="100"></li>
               <li><img src="images/laptop.png" alt="" width="100"></li>
+              <li><img src="images/book.png" alt="" width="100"></li>
+              <li><img src="images/libra.png" alt="" width="100"></li>
             </ul>
           </li>
           <li>Commencez ensuite à partir de ce code HTML dans <code>index.html</code></li>
@@ -47,32 +47,32 @@ title: Landing page HTML/CSS - Troispointquatorze
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My playground landing</title>
+    <title>Troispointquatorze landing page</title>
   </head>
   <body>
-    <h1>My playground app</h1>
-    <p>This is the important line everyone reads..</p>
+    <h1>Le cabinet d'avocat 2.0</h1>
+    <p>Contrats, propriété intellectuelle et innovation</p>
     <p>
-      <a href="#">Start now</a>
+      <a href="#">Contactez nous</a>
     </p>
 
-    <img src="images/briefcase.png" alt="picture description" width="100">
-    <h2>Fast</h2>
-    <p>A fast app, <strong>very fast</strong> app</p>
+    <img src="images/hammer.png" alt="icon marteau" width="100">
+    <h2>Droit du numérique</h2>
+    <p>Protection, licences, contrats SaaS et d’intégration.</p>
 
-    <img src="images/diamond.png" alt="picture description" width="100">
-    <h2>Simple</h2>
-    <p>A simple app, <strong>very simple</strong> app</p>
+    <img src="images/laptop.png" alt="icon ordinateur" width="100">
+    <h2>Nouvelles technologies</h2>
+    <p>Conditions générales d’utilisation, contrats de développement</p>
 
-    <img src="images/heart.png" alt="picture description" width="100">
-    <h2>Awesome</h2>
-    <p>An awesome app, <strong>very awesome</strong> app</p>
+    <img src="images/book.png" alt="icon livre" width="100">
+    <h2>Propriété intellectuelle</h2>
+    <p>Définition de la stratégie, protection et audit de portefeuilles</p>
 
-    <img src="images/laptop.png" alt="picture description" width="100">
-    <h2>Beautiful</h2>
-    <p>A beautiful app, <strong>very beautiful</strong> app</p>
+    <img src="images/libra.png" alt="icon balance" width="100">
+    <h2>Médiation</h2>
+    <p>Et transactions dans le cadre de contentieux.</p>
 
-    <p>This is a playground landing ©Le Wagon</p>
+    <p>Landing page créée par ©Troispointquatorze</p>
   </body>
 </html>
 <% end %>
@@ -142,36 +142,39 @@ a:hover {
 
 <% code("html") do %>
 <div>
-  <h1>My playground app</h1>
-  <p>This is the important line everyone reads..</p>
+  <h1>Le cabinet d'avocat 2.0</h1>
+  <p>Contrats, propriété intellectuelle et innovation</p>
+  <p>
+    <a href="#">Contactez nous</a>
+  </p>
 </div>
 
 <div>
-  <img src="images/briefcase.png" alt="picture description" width="100">
-  <h2>Fast</h2>
-  <p>A fast app, <strong>very fast</strong> app</p>
+  <img src="images/hammer.png" alt="icon marteau" width="100">
+  <h2>Droit du numérique</h2>
+  <p>Protection, licences, contrats SaaS et d’intégration.</p>
 </div>
 
 <div>
-  <img src="images/diamond.png" alt="picture description" width="100">
-  <h2>Simple</h2>
-  <p>A simple app, <strong>very simple</strong> app</p>
+  <img src="images/laptop.png" alt="icon ordinateur" width="100">
+  <h2>Nouvelles technologies</h2>
+  <p>Conditions générales d’utilisation, contrats de développement</p>
 </div>
 
 <div>
-  <img src="images/heart.png" alt="picture description" width="100">
-  <h2>Awesome</h2>
-  <p>An awesome app, <strong>very awesome</strong> app</p>
+  <img src="images/book.png" alt="icon livre" width="100">
+  <h2>Propriété intellectuelle</h2>
+  <p>Définition de la stratégie, protection et audit de portefeuilles</p>
 </div>
 
 <div>
-  <img src="images/laptop.png" alt="picture description" width="100">
-  <h2>Beautiful</h2>
-  <p>A beautiful app, <strong>very beautiful</strong> app</p>
+  <img src="images/libra.png" alt="icon balance" width="100">
+  <h2>Médiation</h2>
+  <p>Et transactions dans le cadre de contentieux.</p>
 </div>
 
 <div>
-  <p>This is a playground landing ©Le Wagon</p>
+  <p>Landing page créée par ©Troispointquatorze</p>
 </div>
 <% end %>
 
@@ -186,11 +189,10 @@ a:hover {
 <% code("css") do %>
 #banner{
   text-align: center;
-  background-image: url("https://unsplash.it/1300/600?random");
+  background-image: linear-gradient(rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0.3)), url("https://source.unsplash.com/1600x900/?lawyer");
   background-size: cover;
   padding: 150px 0;
   color: white;
-  text-shadow: 1px 1px 5px black;
 }
 #banner h1 {
   color: white;
@@ -211,6 +213,10 @@ a:hover {
   padding: 50px;
   font-weight: lighter;
   text-align: center;
+}
+
+.container {
+  width: 100%!important;
 }
 <% end %>
 
